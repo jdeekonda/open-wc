@@ -19,6 +19,7 @@ import { logDebug } from './utils.js';
  * @property {string[]} moduleDirectories
  * @property {boolean} readUserBabelConfig
  * @property {boolean} nodeResolve
+ * @property {(path: string) => boolean} dedupeModules
  * @property {string} compatibilityMode
  * @property {object} [customBabelConfig]
  * @property {string[]} extraFileExtensions
@@ -192,6 +193,7 @@ export function createCompatibilityTransform(cfg) {
         fileExtensions,
         moduleDirectories: cfg.moduleDirectories,
         preserveSymlinks: cfg.preserveSymlinks,
+        dedupeModules: cfg.dedupeModules,
       });
     }
 

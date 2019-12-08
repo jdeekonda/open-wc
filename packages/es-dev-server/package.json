@@ -29,6 +29,7 @@
     "start:http2": "yarn build && node dist/cli.js -c demo/http2/server.js",
     "start:import-map": "yarn build && node dist/cli.js -c demo/import-map/server.js",
     "start:node-resolve": "yarn build && node dist/cli.js -c demo/node-resolve/server.js --open --watch",
+    "start:dedupe": "yarn build && node dist/cli.js -c demo/dedupe/server.js --open --watch",
     "start:performance": "yarn build && node dist/cli.js -c demo/performance/server.js",
     "start:root-dir": "yarn build && node dist/cli.js --root-dir demo/static/ --open",
     "start:static": "yarn build && node dist/cli.js -c demo/static/server.js --open",
